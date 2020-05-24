@@ -7,25 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A01818F247ACDA100B2EDB5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01818E247ACDA100B2EDB5 /* Extensions.swift */; };
 		7A1D4B3A23632B6A00884D04 /* ShadowPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D4B3023632B6A00884D04 /* ShadowPlay.framework */; };
 		7A1D4B3F23632B6A00884D04 /* ShadowPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B3E23632B6A00884D04 /* ShadowPlayTests.swift */; };
 		7A1D4B4123632B6A00884D04 /* ShadowPlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1D4B3323632B6A00884D04 /* ShadowPlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A1D4B7F2363302600884D04 /* ShadowPlayContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B7E2363302600884D04 /* ShadowPlayContainer.swift */; };
-		7A1D4B8123649AEE00884D04 /* ShadowPlayProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B8023649AEE00884D04 /* ShadowPlayProperty.swift */; };
+		7A1D4B7F2363302600884D04 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B7E2363302600884D04 /* AnimationEngine.swift */; };
+		7A1D4B8123649AEE00884D04 /* AnimationNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B8023649AEE00884D04 /* AnimationNodes.swift */; };
 		7A1D4B8323649CBF00884D04 /* ShadowPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B8223649CBF00884D04 /* ShadowPlay.swift */; };
-		7A1D4B852364A0E400884D04 /* ShadowPlayPropertyBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B842364A0E400884D04 /* ShadowPlayPropertyBasic.swift */; };
-		7A1D4B872364A26700884D04 /* ShadowPlayPropertySpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B862364A26700884D04 /* ShadowPlayPropertySpring.swift */; };
-		7A1D4B892364A2DD00884D04 /* ShadowPlayPropertyKeyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B882364A2DD00884D04 /* ShadowPlayPropertyKeyframe.swift */; };
-		7A1D4B8B2364A6C400884D04 /* ShadowPlayTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B8A2364A6C400884D04 /* ShadowPlayTiming.swift */; };
-		7A1D4B8D2364AA5B00884D04 /* ShadowPlayAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B8C2364AA5B00884D04 /* ShadowPlayAnimation.swift */; };
+		7A1D4B852364A0E400884D04 /* AnimationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B842364A0E400884D04 /* AnimationFunctions.swift */; };
+		7A1D4B8B2364A6C400884D04 /* AnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B8A2364A6C400884D04 /* AnimationOptions.swift */; };
+		7A1D4B8D2364AA5B00884D04 /* AnimationCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B8C2364AA5B00884D04 /* AnimationCallbacks.swift */; };
 		7A1D4B952365292400884D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B942365292400884D04 /* AppDelegate.swift */; };
 		7A1D4B972365292400884D04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B962365292400884D04 /* SceneDelegate.swift */; };
 		7A1D4B992365292400884D04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4B982365292400884D04 /* ViewController.swift */; };
 		7A1D4B9C2365292400884D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1D4B9A2365292400884D04 /* Main.storyboard */; };
 		7A1D4B9E2365292500884D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1D4B9D2365292500884D04 /* Assets.xcassets */; };
 		7A1D4BA12365292500884D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1D4B9F2365292500884D04 /* LaunchScreen.storyboard */; };
-		7A1D4BA92365377A00884D04 /* ShadowPlayTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4BA82365377A00884D04 /* ShadowPlayTransition.swift */; };
-		7A1D4BAB236543C100884D04 /* ShadowPlayGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D4BAA236543C100884D04 /* ShadowPlayGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,20 +36,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A01818E247ACDA100B2EDB5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7A1D4B3023632B6A00884D04 /* ShadowPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShadowPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1D4B3323632B6A00884D04 /* ShadowPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowPlay.h; sourceTree = "<group>"; };
 		7A1D4B3423632B6A00884D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A1D4B3923632B6A00884D04 /* ShadowPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShadowPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1D4B3E23632B6A00884D04 /* ShadowPlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayTests.swift; sourceTree = "<group>"; };
 		7A1D4B4023632B6A00884D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A1D4B7E2363302600884D04 /* ShadowPlayContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayContainer.swift; sourceTree = "<group>"; };
-		7A1D4B8023649AEE00884D04 /* ShadowPlayProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayProperty.swift; sourceTree = "<group>"; };
+		7A1D4B7E2363302600884D04 /* AnimationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		7A1D4B8023649AEE00884D04 /* AnimationNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationNodes.swift; sourceTree = "<group>"; };
 		7A1D4B8223649CBF00884D04 /* ShadowPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlay.swift; sourceTree = "<group>"; };
-		7A1D4B842364A0E400884D04 /* ShadowPlayPropertyBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayPropertyBasic.swift; sourceTree = "<group>"; };
-		7A1D4B862364A26700884D04 /* ShadowPlayPropertySpring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayPropertySpring.swift; sourceTree = "<group>"; };
-		7A1D4B882364A2DD00884D04 /* ShadowPlayPropertyKeyframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayPropertyKeyframe.swift; sourceTree = "<group>"; };
-		7A1D4B8A2364A6C400884D04 /* ShadowPlayTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayTiming.swift; sourceTree = "<group>"; };
-		7A1D4B8C2364AA5B00884D04 /* ShadowPlayAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayAnimation.swift; sourceTree = "<group>"; };
+		7A1D4B842364A0E400884D04 /* AnimationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFunctions.swift; sourceTree = "<group>"; };
+		7A1D4B8A2364A6C400884D04 /* AnimationOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptions.swift; sourceTree = "<group>"; };
+		7A1D4B8C2364AA5B00884D04 /* AnimationCallbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCallbacks.swift; sourceTree = "<group>"; };
 		7A1D4B922365292400884D04 /* ShadowPlayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowPlayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1D4B942365292400884D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A1D4B962365292400884D04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +57,6 @@
 		7A1D4B9D2365292500884D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A1D4BA02365292500884D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A1D4BA22365292500884D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A1D4BA82365377A00884D04 /* ShadowPlayTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayTransition.swift; sourceTree = "<group>"; };
-		7A1D4BAA236543C100884D04 /* ShadowPlayGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowPlayGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,16 +110,13 @@
 			children = (
 				7A1D4B3323632B6A00884D04 /* ShadowPlay.h */,
 				7A1D4B3423632B6A00884D04 /* Info.plist */,
-				7A1D4B7E2363302600884D04 /* ShadowPlayContainer.swift */,
-				7A1D4B8C2364AA5B00884D04 /* ShadowPlayAnimation.swift */,
-				7A1D4B8A2364A6C400884D04 /* ShadowPlayTiming.swift */,
-				7A1D4B8023649AEE00884D04 /* ShadowPlayProperty.swift */,
-				7A1D4B842364A0E400884D04 /* ShadowPlayPropertyBasic.swift */,
-				7A1D4B862364A26700884D04 /* ShadowPlayPropertySpring.swift */,
-				7A1D4B882364A2DD00884D04 /* ShadowPlayPropertyKeyframe.swift */,
-				7A1D4BA82365377A00884D04 /* ShadowPlayTransition.swift */,
-				7A1D4BAA236543C100884D04 /* ShadowPlayGroup.swift */,
+				7A1D4B7E2363302600884D04 /* AnimationEngine.swift */,
+				7A1D4B8C2364AA5B00884D04 /* AnimationCallbacks.swift */,
+				7A1D4B8A2364A6C400884D04 /* AnimationOptions.swift */,
+				7A1D4B8023649AEE00884D04 /* AnimationNodes.swift */,
+				7A1D4B842364A0E400884D04 /* AnimationFunctions.swift */,
 				7A1D4B8223649CBF00884D04 /* ShadowPlay.swift */,
+				7A01818E247ACDA100B2EDB5 /* Extensions.swift */,
 			);
 			path = ShadowPlay;
 			sourceTree = "<group>";
@@ -294,16 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1D4B8D2364AA5B00884D04 /* ShadowPlayAnimation.swift in Sources */,
+				7A1D4B8D2364AA5B00884D04 /* AnimationCallbacks.swift in Sources */,
 				7A1D4B8323649CBF00884D04 /* ShadowPlay.swift in Sources */,
-				7A1D4B8123649AEE00884D04 /* ShadowPlayProperty.swift in Sources */,
-				7A1D4B892364A2DD00884D04 /* ShadowPlayPropertyKeyframe.swift in Sources */,
-				7A1D4B7F2363302600884D04 /* ShadowPlayContainer.swift in Sources */,
-				7A1D4BAB236543C100884D04 /* ShadowPlayGroup.swift in Sources */,
-				7A1D4BA92365377A00884D04 /* ShadowPlayTransition.swift in Sources */,
-				7A1D4B8B2364A6C400884D04 /* ShadowPlayTiming.swift in Sources */,
-				7A1D4B872364A26700884D04 /* ShadowPlayPropertySpring.swift in Sources */,
-				7A1D4B852364A0E400884D04 /* ShadowPlayPropertyBasic.swift in Sources */,
+				7A1D4B8123649AEE00884D04 /* AnimationNodes.swift in Sources */,
+				7A1D4B7F2363302600884D04 /* AnimationEngine.swift in Sources */,
+				7A1D4B8B2364A6C400884D04 /* AnimationOptions.swift in Sources */,
+				7A1D4B852364A0E400884D04 /* AnimationFunctions.swift in Sources */,
+				7A01818F247ACDA100B2EDB5 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
