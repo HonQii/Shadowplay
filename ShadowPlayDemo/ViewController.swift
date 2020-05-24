@@ -19,12 +19,16 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        demo.sp.transition.duration(time: 2).type(.fade).subtype(.fromTop).value { (v: Any) in
-            let vv = v as! UIView
-            vv.backgroundColor = .yellow
-        }.run()
+//        demo.sp.transition.duration(time: 2).type(.fade).subtype(.fromTop).value { (v: Any) in
+//            let vv = v as! UIView
+//            vv.backgroundColor = .yellow
+//        }.run()
         
-//        demo.sp.property("position").basic.value(to: CGPoint(x: 400, y: 400)).playback(reverse: false, fill: .backwards).duration(time: 5).run()
+        demo.sp.property("position").basic.value(to: CGPoint(x: 400, y: 400)).playback(reverse: false, fill: .backwards).duration(time: 5).didStart({ (ai) in
+            print("did start")
+        }).didStop({ (ani, isStop) in
+            print("dis stop")
+        }).run()
         
         
     }
