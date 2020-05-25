@@ -41,9 +41,11 @@ open class AnimationEngine: NSObject {
         animator.add(animation, forKey: nil)
     }
     
-    public func runToNext() {
-        currentIndex += 1
-        run()
+    private func runToNext() {
+        if currentIndex < animationNodes.count - 1 {
+            currentIndex += 1
+            run()
+        }
     }
 }
 
@@ -59,7 +61,7 @@ extension AnimationEngine: CAAnimationDelegate {
 }
 
 
-extension AnimationEngine {
+fileprivate extension AnimationEngine {
     func convertNodeToAnimation(node: AnimationNode) -> CAAnimation {
         guard case let .animation(prepareNode, options: opt, callbacks: _) = node.toAnimation else {
             fatalError("Animation Node Wried error")
@@ -102,15 +104,15 @@ extension AnimationEngine {
         case .scaleX(let scale):
             let key = Scale.x.keyPath
             let current = animator.value(forKeyPath: key) as? CGFloat ?? 1
-            animation = convertNodeToAnimation(node: .basic(key: key, from: current, to: current + scale))
+            animation = convertNodeToAnimation(node: .basic(key: key, from: current, to: current * scale))
         case .scaleY(let scale):
             let key = Scale.y.keyPath
             let current = animator.value(forKeyPath: key) as? CGFloat ?? 1
-            animation = convertNodeToAnimation(node: .basic(key: key, from: current, to: current + scale))
+            animation = convertNodeToAnimation(node: .basic(key: key, from: current, to: current * scale))
         case .scaleSize(let scale):
             let key = Scale.all.keyPath
             let current = animator.value(forKeyPath: key) as? CGFloat ?? 1
-            animation = convertNodeToAnimation(node: .basic(key: key, from: current, to: current + scale))
+            animation = convertNodeToAnimation(node: .basic(key: key, from: current, to: current * scale))
         case .borderWidth(let width):
             animation = convertNodeToAnimation(node: .basic(key: #keyPath(CALayer.borderWidth), from: animator.borderWidth, to: width))
         case .borderColor(let color):

@@ -19,18 +19,19 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        demo.sp.transition.duration(time: 2).type(.fade).subtype(.fromTop).value { (v: Any) in
-//            let vv = v as! UIView
-//            vv.backgroundColor = .yellow
-//        }.run()
+//        demo.sp.concurrent([
+//            AnimationNode.scaleSize(0.3).options(.duration(0.3), .removeOnCompletion(false), .fillMode(.forwards), .autoReverses(false)),
+//            AnimationNode.moveX(200).options(.duration(0.3), .removeOnCompletion(false), .fillMode(.forwards), .autoReverses(false)),
+//            AnimationNode.moveY(400).options(.duration(0.3), .removeOnCompletion(false), .fillMode(.forwards), .autoReverses(false)),
+//            AnimationNode.backgroundColor(UIColor.cyan).options(.duration(0.3), .removeOnCompletion(false), .fillMode(.forwards), .autoReverses(false))
+//        ], options: [.duration(0.3), .removeOnCompletion(false), .fillMode(.forwards), .autoReverses(false)]).run()
         
-        demo.sp.property("position").basic.value(to: CGPoint(x: 400, y: 400)).playback(reverse: false, fill: .backwards).duration(time: 5).didStart({ (ai) in
-            print("did start")
-        }).didStop({ (ani, isStop) in
-            print("dis stop")
-        }).run()
+//        demo.sp.series().series().run()
         
-        
+        demo.sp.concurrent([
+            AnimationNode.scaleSize(0.3).options(.duration(0.3), .removeOnCompletion(false), .fillMode(.forwards), .autoReverses(false)),
+            AnimationNode.moveY(350).options(AnimationOption.duration(0.3), .removeOnCompletion(false), .autoReverses(false), .fillMode(.forwards))
+            ]).run()
     }
 }
 

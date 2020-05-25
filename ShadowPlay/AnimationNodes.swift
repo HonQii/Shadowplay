@@ -52,11 +52,11 @@ public indirect enum AnimationNode {
     case animation(_ animation: AnimationNode, options: AnimationOptions = [], callbacks: AnimationCallbacks = [])
     
     
-    func options(_ vals: AnimationOption...) -> AnimationNode {
+    public func options(_ vals: AnimationOption...) -> AnimationNode {
         return options(vals)
     }
     
-    func options(_ vals: AnimationOptions) -> AnimationNode {
+    public func options(_ vals: AnimationOptions) -> AnimationNode {
         switch self {
         case .animation(let ani, options: let opt, callbacks: let call):
             var tmp = Array(opt)
@@ -68,11 +68,11 @@ public indirect enum AnimationNode {
     }
     
     
-    func callbacks(_ vals: AnimationCallback...) -> AnimationNode {
+    public func callbacks(_ vals: AnimationCallback...) -> AnimationNode {
         return callbacks(vals)
     }
     
-    func callbacks(_ vals: AnimationCallbacks) -> AnimationNode {
+    public func callbacks(_ vals: AnimationCallbacks) -> AnimationNode {
         switch self {
         case .animation(let ani, options: let opt, callbacks: let call):
             var tmp = Array(call)
