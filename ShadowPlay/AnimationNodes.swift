@@ -94,6 +94,8 @@ public indirect enum AnimationNode {
             return .animation(.keyframe(key: key, values: vals, keyTimes: times, path: path, extras: []), options: opt)
         case .transition(type: let type, subtype: let subtype, start: let start, end: let end, extras: let opt):
             return .animation(.transition(type: type, subtype: subtype, start: start, end: end, extras: []), options: opt)
+        case .group(let nodes, options: let opt, callbacks: let callbacks):
+            return .animation(.group(nodes, options: [], callbacks: []), options: opt, callbacks: callbacks)
         case .animation(_, options: _, callbacks: _):
             return self
         default:
